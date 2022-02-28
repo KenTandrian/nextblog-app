@@ -52,9 +52,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## Dependencies
 [![react](https://img.shields.io/github/package-json/dependency-version/KenTandrian/nextblog-app/react)](https://www.npmjs.com/package/react)
 [![next](https://img.shields.io/github/package-json/dependency-version/KenTandrian/nextblog-app/next)](https://www.npmjs.com/package/next)
-[![eslint](https://img.shields.io/github/package-json/dependency-version/KenTandrian/nextblog-app/dev/eslint)](https://www.npmjs.com/package/eslint)
 [![react-markdown](https://img.shields.io/github/package-json/dependency-version/KenTandrian/nextblog-app/react-markdown)](https://www.npmjs.com/package/react-markdown)
-[![grey-matter](https://img.shields.io/github/package-json/dependency-version/KenTandrian/nextblog-app/grey-matter)](https://www.npmjs.com/package/grey-matter)
+[![gray-matter](https://img.shields.io/github/package-json/dependency-version/KenTandrian/nextblog-app/gray-matter)](https://www.npmjs.com/package/gray-matter)
 
 [Go to List of Dependencies](https://github.com/KenTandrian/nextblog-app/network/dependencies)
 
