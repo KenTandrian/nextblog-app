@@ -1,4 +1,4 @@
-# NextEvents
+# NextBlog
 [![issues](https://img.shields.io/github/issues/KenTandrian/nextblog-app)](https://github.com/KenTandrian/nextblog-app/issues)
 [![language](https://img.shields.io/github/languages/count/KenTandrian/nextblog-app)](https://github.com/KenTandrian/nextblog-app/search?l=javascript)
 [![top-language](https://img.shields.io/github/languages/top/KenTandrian/nextblog-app)](https://github.com/KenTandrian/nextblog-app/search?l=javascript)
