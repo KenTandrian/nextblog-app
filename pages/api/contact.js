@@ -15,7 +15,6 @@ const handler = async (req, res) => {
         // Store it in a database
         let client;
         try {
-            console.log(process.env);
             client = await MongoClient.connect(process.env.MONGODB_MYSITE_URI);
         } catch (err) {
             res.status(500).json({ message: 'Could not connect to database.' })
