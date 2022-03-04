@@ -47,13 +47,14 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 [![React](https://img.shields.io/badge/-React-black?style=for-the-badge&logo=react)](https://github.com/KenTandrian?tab=repositories&language=javascript)
 [![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)](https://github.com/KenTandrian?tab=repositories)
 [![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)](https://github.com/KenTandrian?tab=repositories)
-
+[![MongoDB](https://img.shields.io/badge/mongodb-black.svg?style=for-the-badge&logo=mongodb&logoColor=-234ea94b)](https://github.com/KenTandrian?tab=repositories)
 
 ## Dependencies
 [![react](https://img.shields.io/github/package-json/dependency-version/KenTandrian/nextblog-app/react)](https://www.npmjs.com/package/react)
 [![next](https://img.shields.io/github/package-json/dependency-version/KenTandrian/nextblog-app/next)](https://www.npmjs.com/package/next)
 [![react-markdown](https://img.shields.io/github/package-json/dependency-version/KenTandrian/nextblog-app/react-markdown)](https://www.npmjs.com/package/react-markdown)
 [![gray-matter](https://img.shields.io/github/package-json/dependency-version/KenTandrian/nextblog-app/gray-matter)](https://www.npmjs.com/package/gray-matter)
+[![mongodb](https://img.shields.io/github/package-json/dependency-version/KenTandrian/nextblog-app/mongodb)](https://www.npmjs.com/package/mongodb)
 
 [Go to List of Dependencies](https://github.com/KenTandrian/nextblog-app/network/dependencies)
 
