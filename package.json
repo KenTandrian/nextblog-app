@@ -10,11 +10,11 @@
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
-    "mongodb": "^4.4.0",
-    "next": "12.1.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-markdown": "^8.0.0",
-    "react-syntax-highlighter": "^15.4.5"
+    "mongodb": "^4.9.1",
+    "next": "^12.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-markdown": "^8.0.3",
+    "react-syntax-highlighter": "^15.5.0"
   }
 }
