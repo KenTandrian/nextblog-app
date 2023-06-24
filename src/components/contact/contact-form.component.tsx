@@ -23,7 +23,7 @@ const ContactForm = () => {
     const [ enteredName, setEnteredName ] = useState('');
     const [ enteredMessage, setEnteredMessage ] = useState('');
 
-    const [ requestStatus, setRequestStatus ] = useState(); // 'pending', 'success', 'error'
+    const [ requestStatus, setRequestStatus ] = useState<string>(); // 'pending', 'success', 'error'
     const [ requestError, setRequestError ] = useState();
 
     useEffect(() => {
@@ -102,7 +102,7 @@ const ContactForm = () => {
                 <div className={classes.control}>
                     <label htmlFor="message">Your Message</label>
                     <textarea 
-                        name="message" id="message" rows="5" 
+                        name="message" id="message" rows={5}
                         value={enteredMessage} required
                         onChange={event => setEnteredMessage(event.target.value)}
                     ></textarea>
