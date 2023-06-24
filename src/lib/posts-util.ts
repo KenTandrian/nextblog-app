@@ -14,7 +14,7 @@ export const getPostData = (postIdentifier) => { // postIdentifier can be filena
     const fileContent = fs.readFileSync(filePath, 'utf-8');
     const { data, content } = matter(fileContent); // return data (metadata) as JS object, and MD as string
 
-    const postData = {
+    const postData: any = {
         slug: postSlug,
         ...data,
         content: content
