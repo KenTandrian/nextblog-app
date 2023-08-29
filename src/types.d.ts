@@ -14,3 +14,9 @@ interface INotification {
     message: string;
     status: "success" | "error" | "pending";
 }
+
+interface IContactDetail {
+    email: string;
+    name: string;
+    message: string;
+}
