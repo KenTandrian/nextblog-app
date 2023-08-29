@@ -7,7 +7,7 @@ import PostsGrid from "../posts/posts-grid.component";
 import classes from './featured-posts.module.css';
 
 // COMPONENT
-const FeaturedPosts = (props) => {
+const FeaturedPosts = (props: { posts: IPost[] }) => {
     return (
         <section className={classes.latest}>
             <h2>Featured Posts</h2>
