@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 
 import MainNavigation from "./main-nav.component";
 
-const Layout = (props) => {
+const Layout = (props: { children?: React.ReactNode }) => {
     return (
         <Fragment>
             <MainNavigation />
