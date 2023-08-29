@@ -8,17 +8,17 @@ export const getPostsFiles = () => {
     return fs.readdirSync(postDirectory);
 }
 
-export const getPostData = (postIdentifier) => { // postIdentifier can be filename or slug only
+export const getPostData = (postIdentifier: string) => { // postIdentifier can be filename or slug only
     const postSlug = postIdentifier.replace(/\.md$/, ''); // removes the file extension
     const filePath = path.join(postDirectory, `${postSlug}.md`);
     const fileContent = fs.readFileSync(filePath, 'utf-8');
     const { data, content } = matter(fileContent); // return data (metadata) as JS object, and MD as string
 
-    const postData: any = {
+    const postData = {
         slug: postSlug,
         ...data,
         content: content
-    }
+    } as IPost;
 
     return postData;
 }
