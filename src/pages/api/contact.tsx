@@ -1,6 +1,7 @@
 import { MongoClient } from "mongodb";
+import { NextApiHandler } from "next";
 
-const handler = async (req, res) => {
+const handler: NextApiHandler = async (req, res) => {
     if (req.method === 'POST'){
         const { email, name, message } = req.body;
 
@@ -13,7 +14,7 @@ const handler = async (req, res) => {
         };
 
         // Store it in a database
-        let client;
+        let client: MongoClient;
         const connectionString = 
             `mongodb+srv://${process.env.mongodb_username}:${process.env.mongodb_pwd}@${process.env.mongodb_clustername}.mongodb.net/${process.env.mongodb_database}?retryWrites=true&w=majority`;
         
