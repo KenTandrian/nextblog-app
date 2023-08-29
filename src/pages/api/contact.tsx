@@ -3,7 +3,7 @@ import { NextApiHandler } from "next";
 
 const handler: NextApiHandler = async (req, res) => {
     if (req.method === 'POST'){
-        const { email, name, message } = req.body;
+        const { email, name, message } = req.body as IContactDetail;
 
         if (!email || !email.includes('@') || !name || name.trim() !== '' || !message || message.trim() !== '') {
             res.status(422).json({ message: 'Invalid input!' });

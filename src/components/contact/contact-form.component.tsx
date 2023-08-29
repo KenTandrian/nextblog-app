@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import classes from './contact-form.module.css';
 import Notification from '../ui/notification.component';
 
-const sendContactData = async (contactDetails) => {
+const sendContactData = async (contactDetails: IContactDetail) => {
     const resp = await fetch('/api/contact', {
         method: 'POST',
         body: JSON.stringify(contactDetails),
@@ -37,7 +37,7 @@ const ContactForm = () => {
         }
     }, [requestStatus]);
 
-    const sendMessageHandler = async (event) => {
+    const sendMessageHandler = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault(); // We can also add client-side validation here
 
         setRequestStatus('pending');
@@ -57,7 +57,7 @@ const ContactForm = () => {
         }
     }
 
-    let notification;
+    let notification: INotification;
     if (requestStatus === 'pending') {
         notification = {
             status: 'pending',
