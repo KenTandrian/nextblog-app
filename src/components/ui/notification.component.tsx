@@ -2,7 +2,7 @@ import ReactDOM from 'react-dom'; // To convert this component to React portal
 
 import classes from './notification.module.css';
 
-function Notification(props) {
+function Notification(props: INotification) {
   const { title, message, status } = props;
 
   let statusClasses = '';
