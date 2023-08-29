@@ -21,7 +21,7 @@ export const getStaticProps = (context: GetStaticPropsContext) => {
     const { params } = context;
     const { slug } = params;
 
-    const postData = getPostData(slug);
+    const postData = getPostData(slug as string);
 
     return {
         props: {
