@@ -2,8 +2,8 @@ import React, { Fragment } from "react";
 import { InferGetStaticPropsType } from "next";
 import Head from "next/head";
 
-import AllPosts from "../../components/posts/all-posts.component";
-import { getAllPosts } from "../../lib/posts-util";
+import AllPosts from "@/components/posts/all-posts.component";
+import { getAllPosts } from "@/lib/posts-util";
 
 const AllPostsPage = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
     return (

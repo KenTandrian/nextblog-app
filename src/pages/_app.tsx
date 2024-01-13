@@ -1,9 +1,9 @@
 import React from 'react'
 import Head from 'next/head'
 
-import Layout from '../components/layout/layout.component'
+import Layout from '@/components/layout/layout.component';
 
-import '../styles/globals.css'
+import '@/styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
   return (
