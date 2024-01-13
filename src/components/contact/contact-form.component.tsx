@@ -23,8 +23,8 @@ const ContactForm = () => {
     const [ enteredName, setEnteredName ] = useState('');
     const [ enteredMessage, setEnteredMessage ] = useState('');
 
-    const [ requestStatus, setRequestStatus ] = useState<string>(); // 'pending', 'success', 'error'
-    const [ requestError, setRequestError ] = useState();
+    const [ requestStatus, setRequestStatus ] = useState<string | null>(); // 'pending', 'success', 'error'
+    const [ requestError, setRequestError ] = useState<string | null>();
 
     useEffect(() => {
         if (requestStatus === 'success' || requestStatus === 'error') {
@@ -57,7 +57,7 @@ const ContactForm = () => {
         }
     }
 
-    let notification: INotification;
+    let notification: INotification | undefined = undefined;
     if (requestStatus === 'pending') {
         notification = {
             status: 'pending',
@@ -78,7 +78,7 @@ const ContactForm = () => {
         notification = {
             status: 'error',
             title: 'Error :(',
-            message: requestError
+            message: requestError ?? ""
         }
     }
 

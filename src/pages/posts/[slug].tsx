@@ -19,7 +19,7 @@ const PostDetailPage = (props: InferGetStaticPropsType<typeof getStaticProps>) =
 
 export const getStaticProps = (context: GetStaticPropsContext) => {
     const { params } = context;
-    const { slug } = params;
+    const { slug } = params ?? {};
 
     const postData = getPostData(slug as string);
 
